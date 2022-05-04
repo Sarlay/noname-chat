@@ -20,7 +20,7 @@
       <h2>Messages:</h2>
       <?php
       $user = "sarlay";
-      $password = "password"; #REPLACE getenv("") with your password
+      $password = ""; #REPLACE getenv("") with your password
       $database = "messages";
       $table = "messages";
         $db = new PDO("mysql:host=localhost;dbname=$database", $user, $password);
@@ -36,8 +36,8 @@
     <div>
     <h2>Add a new message:</h2>
         <form method="post">
-          <input type="text" name="username">
-          <input type="text" name="content">
+          <input type="text" name="username" placeholder="Nom d'utilisateur"><br/><br/>
+          <input type="text" name="content" placeholder="Contenu du message"><br/><br/>
           <button type="submit">Envoyer</button>
         </form>
     </div>

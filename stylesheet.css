@@ -1,0 +1,25 @@
+body {
+    background-color: #1d1e20;
+    opacity: 1;
+    color: rgba(255, 255, 255, 0.84);
+    max-width: 100%;
+}
+text {
+    color: white;
+}
+.header {
+    border-style: solid;
+    border-radius: 5px;
+    border-color: red;
+    max-width: 100%;
+}
+.website_title {
+    font-size: 50px;
+    text-align: center;
+}
+.username {
+    border-style: solid;
+    border-radius: 5px;
+    border-color: lightblue;
+    margin-left: 5px;
+}

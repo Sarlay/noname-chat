@@ -19,6 +19,8 @@
     <div class="messages_list">
       <h2>Messages:</h2>
       <?php
+      ini_set('display_errors', 1);
+      error_reporting(E_ALL);
       $user = "sarlay";
       $password = ""; #REPLACE getenv("") with your password
       $database = "messages";
@@ -27,7 +29,7 @@
         echo "<ol>";
         foreach($db->query("SELECT * FROM $table") as $row) {
             
-          echo "<li>" . $row['content'] .  "<text class='username'>" . $row['username'] . "</text>", "</li>";
+          echo "<li class='message_line'>" . $row['content'] .  "<text class='username'>" . $row['username'] . "</text>", "</li>";
 
         }
         echo "</ol>";

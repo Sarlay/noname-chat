@@ -35,11 +35,12 @@
     </div>
     <div>
     <h2>Add a new message:</h2>
-        <form method="post">
+        <form target="post_iframe" action="post.php" method="post">
           <input type="text" name="username" placeholder="Nom d'utilisateur"><br/><br/>
           <input type="text" name="content" placeholder="Contenu du message"><br/><br/>
           <button type="submit">Envoyer</button>
         </form>
+        <iframe style="" name="post_iframe" id="post_iframe"></iframe>
     </div>
     </body>
 </html>

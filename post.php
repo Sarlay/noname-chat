@@ -1,9 +1,11 @@
+<link rel="stylesheet" href="stylesheet.css"/>
  <?php
-$user = "sarlay";
-$password = ""; #REPLACE getenv("") with your password
-$database = "messages";
+$user = "epiz_31661084";
+$password = "4FKvogrBe4tX"; #REPLACE getenv("") with your password
+$database = "epiz_31661084_noname";
 $table = "messages";
-$db = new PDO("mysql:host=localhost;dbname=$database", $user, $password);
+$server = "sql109.epizy.com";
+$db = new PDO("mysql:host=$server;dbname=$database", $user, $password);
 
 
 # only allow letters and numbers
@@ -15,7 +17,7 @@ $exec = $db->prepare("INSERT INTO messages (content, username) VALUES(?,?)");
 $exec->execute(array($message_content,$message_username));
 
 if($exec){
-    echo 'Message envoyé avec succès';
+    echo "Message envoyé avec succès";
 }else{
     echo "Ca beug";
 }

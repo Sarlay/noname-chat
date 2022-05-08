@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
-<link rel="stylesheet" href="stylesheet.css" type="text/css" media="screen" />
 <html>
     <head>
+        <link rel="stylesheet" href="stylesheet.css"/>
         <title>
         NoName Chat
         </title>
@@ -21,15 +21,15 @@
       <?php
       ini_set('display_errors', 1);
       error_reporting(E_ALL);
-      $user = "sarlay";
-      $password = ""; #REPLACE getenv("") with your password
-      $database = "messages";
+      $user = "epiz_31661084";
+      $server = "sql109.epizy.com";
+      $password = "4FKvogrBe4tX"; #REPLACE getenv("") with your password
+      $database = "epiz_31661084_noname";
       $table = "messages";
-        $db = new PDO("mysql:host=localhost;dbname=$database", $user, $password);
+        $db = new PDO("mysql:host=$server;dbname=$database", $user, $password);
         echo "<ol>";
-        foreach($db->query("SELECT * FROM $table") as $row) {
-            
-          echo "<li class='message_line'>" . $row['content'] .  "<text class='username'>" . $row['username'] . "</text>", "</li>";
+        foreach($db->query("SELECT * FROM $table") as $row) { 
+          echo "<li class='username'>" . $row['username'] . "</li>".  "<text class='message_line'>" . $row['content'] . "</text>";
 
         }
         echo "</ol>";

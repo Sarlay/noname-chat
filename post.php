@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="stylesheet.css"/>
  <?php
 $user = "epiz_31661084";
-$password = "4FKvogrBe4tX"; #REPLACE getenv("") with your password
+$password = "";
 $database = "epiz_31661084_noname";
 $table = "messages";
 $server = "sql109.epizy.com";

@@ -23,7 +23,7 @@
       error_reporting(E_ALL);
       $user = "epiz_31661084";
       $server = "sql109.epizy.com";
-      $password = "4FKvogrBe4tX"; #REPLACE getenv("") with your password
+      $password = ""; #REPLACE getenv("") with your password
       $database = "epiz_31661084_noname";
       $table = "messages";
         $db = new PDO("mysql:host=$server;dbname=$database", $user, $password);

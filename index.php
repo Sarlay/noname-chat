@@ -29,7 +29,7 @@
         $db = new PDO("mysql:host=$server;dbname=$database", $user, $password);
         echo "<ol>";
         foreach($db->query("SELECT * FROM $table") as $row) { 
-          echo "<li class='username'>" . $row['username'] . "</li>".  "<text class='message_line'>" . $row['content'] . "</text>";
+          echo "<li><text class='username'>" . $row['username'] . "</text></li>".  "<text class='message_line'>" . $row['content'] . "</text>";
 
         }
         echo "</ol>";

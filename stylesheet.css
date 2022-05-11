@@ -47,7 +47,7 @@ iframe {
 input[type=submit] {
     background:url(https://img.icons8.com/material-outlined/48/000000/filled-sent.png);
     border:0;
-    display:block;
+    display: inline-block;
     height:48px;
     width: 48px;
 }

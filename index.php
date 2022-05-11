@@ -21,11 +21,10 @@
       <iframe name="post_iframe" id="post_iframe"></iframe>
     </div>
     <div>
-    <h2>Add a new message:</h2>
+    <h2>Envoyer un message:</h2>
         <form target="post_iframe" action="post.php" method="post">
           <input type="text" name="username" placeholder="Nom d'utilisateur"><br/><br/>
-          <div><input type="text" name="content" placeholder="Contenu du message"><button type="submit">Envoyer</button></div>
-          <input type="button" value="Refresh Page" onClick="refresh">
+          <div><input type="text" name="content" placeholder="Contenu du message"><button class="hide_text" type="submit">Envoyer</button></div>
         </form>
     </div>
     </body>

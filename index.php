@@ -24,7 +24,7 @@
     <h2>Envoyer un message:</h2>
         <form target="post_iframe" action="post.php" method="post">
           <input type="text" name="username" placeholder="Nom d'utilisateur"><br/><br/>
-          <div><input type="text" name="content" placeholder="Contenu du message"><input class="hide_text" type="submit">Envoyer</input></div>
+            <div><input class="input_content" type="text" name="content" placeholder="Contenu du message"></input><input class="hide_text" type="submit">Envoyer</input></div>
         </form>
     </div>
     </body>

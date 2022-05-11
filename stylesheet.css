@@ -3,6 +3,8 @@ body {
     opacity: 1;
     color: rgba(255, 255, 255, 0.84);
     max-width: 100%;
+    font-family: 'Roboto';
+    font-size: 22px;
 }
 text {
     color: rgb(255, 255, 255);
@@ -40,4 +42,19 @@ input{
 
 iframe {
     width: 100%;
+}
+
+input[type=submit] {
+    background:url(https://img.icons8.com/material-outlined/48/000000/filled-sent.png);
+    border:0;
+    display:block;
+    height:48px;
+    width: 48px;
+}
+.hide_text {
+    font-size: 0;
+}
+.content_input {
+    width: 500px;
+    height: 50px;
 }

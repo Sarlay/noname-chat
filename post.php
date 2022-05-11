@@ -8,9 +8,10 @@ $server = "sql109.epizy.com";
 $db = new PDO("mysql:host=$server;dbname=$database", $user, $password);
 
 
-# only allow letters and numbers
-$message_username=preg_replace("/[^a-zA-Z0-9 ]+/", "", $_POST["username"]); # Prevents sql injection through regex
-$message_content=preg_replace("/[^a-zA-Z0-9 ]+/", "", $_POST["content"]); # Prevents sql injection through regex
+# only allow letters and numbers and symbols
+$filter = "/[^a-zA-Z0-9ç?!. ]+/";
+$message_username=preg_replace($filter, "", $_POST["username"]); # Prevents sql injection through regex
+$message_content=preg_replace($filter, "", $_POST["content"]); # Prevents sql injection through regex
 
 
 $exec = $db->prepare("INSERT INTO messages (content, username) VALUES(?,?)");

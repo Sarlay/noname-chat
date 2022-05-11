@@ -18,7 +18,7 @@ $exec = $db->prepare("INSERT INTO messages (content, username) VALUES(?,?)");
 $exec->execute(array($message_content,$message_username));
 
 if($exec){
-    include 'list.php';;
+    include 'list.php';
 }else{
     echo "Ca beug";
 }

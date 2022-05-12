@@ -1,13 +1,13 @@
 body {
     background-color: #404040;
     opacity: 1;
-    color: rgba(#FFF);
+    color: #FFF;
     max-width: 100%;
     font-family: 'Roboto';
     font-size: 22px;
 }
 text {
-    color: rgb(255, 255, 255);
+    color: #FFF;
 }
 .header {
     border-style: solid;

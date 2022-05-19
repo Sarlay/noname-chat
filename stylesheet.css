@@ -64,6 +64,7 @@ input[type=submit] {
 }
 ul {
     list-style: none;
+    padding-left: 5px;
 }
 li {
   text-align: left;

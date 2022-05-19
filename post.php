@@ -13,13 +13,13 @@ $filter = "/[^a-zA-Z0-9ç?!. ]+/";
 $message_username=preg_replace($filter, "", $_POST["username"]); # Prevents sql injection through regex
 $message_content=preg_replace($filter, "", $_POST["content"]); # Prevents sql injection through regex
 
-if(isset($_POST['username']) && isset($_POST['content'])) {
+if(isset($_POST['username']) && isset($_POST['content']) && $_POST['username'] !== "" && $_POST['content'] !== "") {
     $exec = $db->prepare("INSERT INTO messages (content, username) VALUES(?,?)");
     $exec->execute(array($message_content,$message_username));
 
     if($exec){
         include 'list.php';
     } else {
-        echo "Ca beug";
+        include 'list.php';
     }
 }

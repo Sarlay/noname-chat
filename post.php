@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="stylesheet.css"/>
  <?php
 $user = "epiz_31661084";
-$password = "nonameNSI2";
+$password = "";
 $database = "epiz_31661084_noname";
 $table = "messages";
 $server = "sql109.epizy.com";

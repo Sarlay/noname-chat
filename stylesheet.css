@@ -65,3 +65,6 @@ input[type=submit] {
 ul {
     list-style: none;
 }
+li {
+  text-align: left;
+}

@@ -12,7 +12,7 @@
     $db = new PDO("mysql:host=$server;dbname=$database", $user, $password);
     echo "<ul>";
     foreach($db->query("SELECT * FROM $table") as $row) {
-      echo "<li><text class='username'>" . $row['username'] . "</text>".  "<text class='message_line'>" . $row['content'] . "</text></li>";
+      echo "<li><text class='username'>" . $row['username'] . ": </text>".  "<text class='message_line'>" . $row['content'] . "</text></li>";
 
     }
     echo "</ul>";

@@ -1,3 +1,6 @@
+<html>
+<link rel="stylesheet" href="stylesheet.css"/>
+
 <?php
   ini_set('display_errors', 1);
   error_reporting(E_ALL);
@@ -14,3 +17,4 @@
     }
     echo "</ol>";
 ?>
+</html>

@@ -10,11 +10,11 @@
   $database = "epiz_31661084_noname";
   $table = "messages";
     $db = new PDO("mysql:host=$server;dbname=$database", $user, $password);
-    echo "<ol>";
-    foreach($db->query("SELECT * FROM $table") as $row) { 
+    echo "<ul>";
+    foreach($db->query("SELECT * FROM $table") as $row) {
       echo "<li><text class='username'>" . $row['username'] . "</text></li>".  "<text class='message_line'>" . $row['content'] . "</text>";
 
     }
-    echo "</ol>";
+    echo "</ul>";
 ?>
 </html>

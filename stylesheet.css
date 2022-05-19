@@ -24,6 +24,7 @@ text {
     border-radius: 3px;
     border-color: rgb(0, 191, 255);
     margin-left: 5px;
+    font-weight: bold;
 }
 .message_line {
     width: 100%;

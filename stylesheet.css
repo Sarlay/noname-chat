@@ -1,3 +1,5 @@
+
+/* === Global for all pages === */
 body {
     background-color: #404040;
     opacity: 1;
@@ -9,28 +11,6 @@ body {
 text {
     color: #FFF;
 }
-.header {
-    border-style: solid;
-    border-radius: 5px;
-    border-color: rgb(152, 104, 214);
-    text-align: center;
-}
-.website_title {
-    font-size: 50px;
-    text-align: center;
-}
-.username {
-    border-style: inset;
-    border-radius: 3px;
-    border-color: rgb(0, 191, 255);
-    margin-left: 5px;
-    font-weight: bold;
-}
-.message_line {
-    width: 100%;
-    height: 50px;
-    margin-top: 5px;
-}
 
 input{
   display: block;
@@ -39,22 +19,43 @@ input{
   padding: 8px 12px 10px 12px;
   border: 1px solid #87ceeb;
   background: rgba(0,0,0,.25);
-  color: #FFFFF;
+  color: #FFF;
 }
 
-iframe {
-    width: 100%;
+input, select, textarea{
+    color: #FFF;
 }
 
-input[type=submit] {
-    background:url(https://img.icons8.com/material-outlined/48/000000/filled-sent.png);
-    border:0;
-    display: inline-block;
-    height:48px;
-    width: 48px;
-}
 .hide_text {
     font-size: 0;
+}
+
+/* === Only for chat.php === */
+.header {
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(152, 104, 214);
+    text-align: center;
+}
+.username { /* username of message sent */
+    border-style: inset;
+    border-radius: 3px;
+    border-color: rgb(0, 191, 255);
+    margin-left: 5px;
+    font-weight: bold;
+}
+.message_line { /* message_line of message sent inside of <ul>*/
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+}
+
+#submit {
+  background:url(https://img.icons8.com/material-outlined/48/000000/filled-sent.png);
+  border:0;
+  display: inline-block;
+  height:48px;
+  width: 48px;
 }
 .content_input {
     width: 500px;
@@ -63,10 +64,55 @@ input[type=submit] {
 .input_content {
     display:inline-block;
 }
+
+#message_list {
+  height: 500px;
+  overflow-y: scroll; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 5px;
+}
 ul {
+    height: 100%;
     list-style: none;
     padding-left: 5px;
 }
 li {
   text-align: left;
+}
+
+.logged_in_as_username {
+  display: inline-block;
+  float: right;
+}
+/* === Only for login.php === */
+.div-account {
+    text-align:center
+}
+.input-account {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.account_interaction { /* can be login or register*/
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+}
+.nonamechat_logo {
+  height: 250px;
+  text-align: center;
+}
+.nonamechat_logo_send_page {
+  height: 150px;
+  text-align: center;
+  margin-left: 75px;
 }
